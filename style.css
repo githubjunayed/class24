@@ -1,0 +1,300 @@
+.pic{
+    width: 100px;
+    height: 80px;
+}
+img{
+    max-width: 100%;
+}
+.ok{
+    background: #ddd;
+    
+}
+
+
+.our-primary-menu{
+
+}
+.menu{
+    background: #e7e6e6;
+}
+
+.our-primary-menu li{
+    position: relative;
+}
+ul.our-primary-menu li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #000;
+  
+}
+
+
+.our-primary-menu li ul.dropdown{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 0;
+    top: 100%;
+    background: #ffff;
+  display: block;
+ 
+  margin-top: 25px;
+  visibility: hidden;
+ transform: scaleY(0); 
+ transform-origin: top center;
+  transition: .5s;
+
+}
+.our-primary-menu li ul.dropdown li{
+    display: block;
+    list-style: none;
+    line-height: 80px;
+   
+   
+}
+.our-primary-menu li ul.dropdown li a{
+    display: inline-block;
+
+   text-align: center;
+   background: red;
+   border-radius: 20px;
+   box-sizing: border-box;
+   margin-top: 10px;
+   
+
+ 
+}
+.our-primary-menu li:hover ul.dropdown{
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+
+.click-button-section{
+    display: inline-block;
+    text-decoration: none;
+    background: #ffff;
+padding: 10px 20px;
+color: #086bfd;
+border-radius: 30px;
+position: relative;
+
+    z-index: 1;
+  
+    
+}
+.click-button-section a{
+    display: inline-block;
+    text-decoration: none;
+}
+.click-button-section::before{
+    content: "";
+    position: absolute;
+    width:0% ;
+    top: 0;
+    height: 100%;
+    left: 0;
+    background: #086bfd;
+ color: #fff;
+    transition: .5s;
+    border-radius: 30px;
+    
+
+}
+.click-button-section:hover::before{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*slider -section*
+
+
+
+.slider-section{
+    background:#ddd;
+}
+.photo{
+    border-radius: 50%;
+    object-fit: contain;
+    width: 100%;
+}
+.text{
+    padding: 130px 0;
+}
+.text h1{
+    padding: 20px 0;
+}
+.buttonsection{
+    background: #086bfd;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: .5s;
+    
+}
+.buttonsection:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.text-section h6{
+    color: #b0a5f0;
+}
+.text-section h1{
+    position: relative;
+}
+.text-section h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #000;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    
+}
+
+
+
+.card-section h1{
+    padding: 10px 0;
+}
+.card-section span{
+
+background: #5252f0;
+padding: 10px;
+width: 80px;
+line-height: 80px;
+height: 80px;
+border-radius: 50px 50px 50px 0;
+display: block;
+position: relative;
+transition: .5s;
+}
+.card-section:hover span{
+    background: #fff;
+}
+
+
+
+
+.card-section span i{
+    font-size:40px;
+    text-align: center;
+}
+.card-section p{
+    padding: 20px 0;
+}
+.card-section span::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #000;
+    margin-top: 10px;
+}
+
+.card-section{
+    position: relative;
+    z-index: 1;
+ 
+    
+}
+
+
+.card-section::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:#535dfa;
+    visibility: hidden;
+    border-radius: 10px;
+  opacity: 0;
+
+    z-index: -1;
+    transition: .5s;
+}
+.card-section:hover::before{
+    visibility: visible;
+    opacity: 1;
+
+}
+.text-section-items{
+    width: 600px;
+    margin: auto;
+}
+.text-section-items h1{
+    position: relative;
+}
+.text-section-items h1::before{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background: #000;
+    top: 100%;
+    left:200px ;
+
+}
+.footer-section{
+  background: url(https://img.hotimg.com/video-bg.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 150px 0;
+
+text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+ 
+}
+.footer-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: -1;
+
+}
+
+.icon span{
+font-size: 50px;
+
+    color: #5252f0;
+    padding: 10px;
+
+  
+    display: inline-block;
+    
+}
+
+
+
