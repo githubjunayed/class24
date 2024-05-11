@@ -2,6 +2,11 @@
     width: 100px;
     height: 80px;
 }
+
+
+body,h1,h2{
+    font-family: "League Spartan", sans-serif;
+}
 img{
     max-width: 100%;
 }
@@ -26,6 +31,7 @@ ul.our-primary-menu li a{
     padding: 10px 20px;
     display: inline-block;
     color: #000;
+    position: relative;
   
 }
 
@@ -65,6 +71,33 @@ ul.our-primary-menu li a{
 
  
 }
+
+.our-primary-menu li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:0%;
+    height: 2px;
+    background: #000;
+    margin-left: 15px;
+    transition: .5;
+ 
+}
+.our-primary-menu li a:hover::before{
+  
+    width: 60px;
+    
+}
+
+
+
+
+
+
+
+
+
 .our-primary-menu li:hover ul.dropdown{
     visibility: visible;
     transform: scaleY(1);
@@ -219,8 +252,12 @@ transition: .5s;
 .card-section{
     position: relative;
     z-index: 1;
+    transform: scale(1);
  
     
+}
+.card-section:hover{
+    transform: scale(1);
 }
 
 
@@ -238,10 +275,12 @@ transition: .5s;
 
     z-index: -1;
     transition: .5s;
+    transform: scale(1);
 }
 .card-section:hover::before{
     visibility: visible;
     opacity: 1;
+    
 
 }
 .text-section-items{
@@ -265,7 +304,8 @@ transition: .5s;
   background: url(https://img.hotimg.com/video-bg.jpeg);
 background-repeat: no-repeat;
 background-size: cover;
-padding: 150px 0;
+padding: 100px 0;
+margin-top: 20px;
 
 text-align: center;
     color: #fff;
@@ -285,16 +325,73 @@ text-align: center;
 
 }
 
-.icon span{
+.icon3 span{
+
 font-size: 50px;
 
+
     color: #5252f0;
-    padding: 10px;
+    padding: 20px 0;
 
   
     display: inline-block;
     
 }
+.icon1{
+    width: 100px;
+    background: #ffff;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+.icon2{
+    width: 100px;
+  
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: 100px;
+    border: 2px solid #000;
+    animation-duration: 4s;
+    animation-name:name;
+animation-iteration-count: infinite;
+}
+.icon3{
+    width: 100px;
+    
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: 200px;
+    border: 2px solid #000;
+    animation-duration:3s;
+    animation-name: name;
+    animation-iteration-count:infinite ;
+
+}
+@keyframes name {
+       
+        33%{
+            transform: scale(1.5);
+            opacity: 1;
+
+        }
+        62%{
+            transform: scale(1.2);
+            opacity: 0;
+           
+        }
+        100%{
+            transform: scale(1.9);
+            opacity: 0;
+         
+
+        }
+}
+
+
 
 
 
